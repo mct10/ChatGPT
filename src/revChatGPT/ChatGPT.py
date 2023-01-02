@@ -381,6 +381,7 @@ class Chatbot:
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-setuid-sandbox")
         options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--headless")
         if self.config.get("proxy", "") != "":
             options.add_argument("--proxy-server=" + self.config["proxy"])
         return options
